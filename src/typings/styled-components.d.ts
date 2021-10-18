@@ -1,4 +1,3 @@
-import { MainTheme } from '../themes';
 import { Theme as MuiTheme } from '@mui/material/styles/createTheme';
 
 declare module 'styled-components' {

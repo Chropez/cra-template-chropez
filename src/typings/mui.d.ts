@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-interface */
 import { PartialDeep } from 'type-fest';
 
 interface ExtendedComponents {
