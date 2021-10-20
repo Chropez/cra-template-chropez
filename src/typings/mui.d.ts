@@ -2,8 +2,9 @@
 import { PartialDeep } from 'type-fest';
 
 interface ExtendedComponents {
-  MyOwnComponent?: {
+  TypedText?: {
     color?: string;
+    fontFamily?: string;
   };
 }
 

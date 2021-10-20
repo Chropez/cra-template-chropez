@@ -24,12 +24,28 @@ const defaultMuiTheme: ThemeOptions = {
         LinkComponent: LinkBehavior,
       },
     },
-    MyOwnComponent: {
-      color: 'teal',
+    TypedText: {
+      fontFamily: 'monospace',
     },
   },
   secondaryBackground: {
-    textColor: 'green',
+    bgImage: `linear-gradient(
+      to right bottom,
+      #62a3ff,
+      #579af6,
+      #4b91ed,
+      #3e89e5,
+      #3080dc,
+      #2779d4,
+      #1e71cc,
+      #116ac4,
+      #0d62bb,
+      #085ab1,
+      #0452a8,
+      #004a9f
+    );`,
+    textColor: 'white',
+    linkColor: '#a7ffa3',
   },
 };
 
