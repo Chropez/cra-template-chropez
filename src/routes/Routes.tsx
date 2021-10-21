@@ -1,16 +1,8 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, lazy } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
-import AboutRoute from './about';
-import RootRoute from './root';
-// import AnonymousOnlyRoute from 'utils/routes/AnonymousOnlyRoute';
-// import ProtectedRoute from 'utils/routes/ProtectedRoute';
-// import AccountRoute from './account';
-// import HomeRoute from './home';
-// import { GameRoute } from './games';
-// import PrivacyPolicy from './terms/privacy-policy';
-// import TermsAndConditions from './terms/terms-and-conditions';
-// import InvitationRoute from './games/routes/invitation/InvitationRoute';
-// import FriendsRoute from './friends/FriendsRoute';
+
+const AboutRoute = lazy(() => import('./about'));
+const RootRoute = lazy(() => import('./root'));
 
 const Routes: FunctionComponent = () => {
   return (
