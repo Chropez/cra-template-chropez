@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link as RouterLink, LinkProps as RouterLinkProps } from 'react-router-dom';
-import { createTheme as createMuiTheme, LinkProps as MuiLinkProps, ThemeOptions } from '@mui/material';
+import { ThemeOptions, LinkProps as MuiLinkProps } from '@mui/material';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const LinkBehavior = React.forwardRef<any, Omit<RouterLinkProps, 'to'> & { href: RouterLinkProps['to'] }>(
@@ -12,7 +12,12 @@ const LinkBehavior = React.forwardRef<any, Omit<RouterLinkProps, 'to'> & { href:
   }
 );
 
-const defaultMuiTheme: ThemeOptions = {
+const defaultTheme: ThemeOptions = {
+  palette: {
+    background: {
+      default: '#f3f3f3',
+    },
+  },
   components: {
     MuiLink: {
       defaultProps: {
@@ -30,27 +35,23 @@ const defaultMuiTheme: ThemeOptions = {
   },
   secondaryBackground: {
     bgImage: `linear-gradient(
-      to right bottom,
-      #62a3ff,
-      #579af6,
-      #4b91ed,
-      #3e89e5,
-      #3080dc,
-      #2779d4,
-      #1e71cc,
-      #116ac4,
-      #0d62bb,
-      #085ab1,
-      #0452a8,
-      #004a9f
-    );`,
+        to right bottom,
+        #62a3ff,
+        #579af6,
+        #4b91ed,
+        #3e89e5,
+        #3080dc,
+        #2779d4,
+        #1e71cc,
+        #116ac4,
+        #0d62bb,
+        #085ab1,
+        #0452a8,
+        #004a9f
+      );`,
     textColor: 'white',
-    linkColor: '#a7ffa3',
+    linkColor: '#62dafb',
   },
 };
-
-const createAppTheme = (theme: ThemeOptions) => createMuiTheme(theme);
-
-const defaultTheme = createAppTheme(defaultMuiTheme);
 
 export default defaultTheme;
