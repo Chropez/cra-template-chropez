@@ -1,27 +1,17 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 // import styled from '@mui/styled-engine-sc';
-import CssBaseline from '@mui/material/CssBaseline';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { ThemeProvider } from '@mui/material';
-import appTheme from './themes';
+import App from 'app/App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
-
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import Routes from './routes/Routes';
 
 ReactDOM.render(
   <React.StrictMode>
-    <CssBaseline />
-    <ThemeProvider theme={appTheme}>
-      <Router>
-        <Routes />
-      </Router>
-    </ThemeProvider>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

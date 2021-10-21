@@ -37,9 +37,9 @@ const AboutLink = styled(Link)`
 const RootRoute: FC = () => (
   <Wrapper>
     <Logo src={logo} alt="logo" />
-    <Typography variant="h2">CRA</Typography>
-    <Box>
-      <TypedText text="Welcome to this opinionated template" variant="body1" />
+    <Typography variant="h2">Create React App</Typography>
+    <Box mt={5}>
+      <TypedText text="An opinionated template ready to use" variant="body1" />
     </Box>
     <Box mt={5}>
       <AboutLink href="/about">Read more about it</AboutLink>
