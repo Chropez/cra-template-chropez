@@ -51,6 +51,12 @@ const AboutList: FC = () => (
         </ListItemIcon>
         <ListItemText primary="Scalable folder structure" />
       </ListItem>
+      <ListItem>
+        <ListItemIcon>
+          <Check color="success" />
+        </ListItemIcon>
+        <ListItemText primary="Ready to use dog picture with counter!" />
+      </ListItem>
     </List>
   </Paper>
 );

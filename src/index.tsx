@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 // import styled from '@mui/styled-engine-sc';
 import App from 'app/App';
