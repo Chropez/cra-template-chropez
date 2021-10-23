@@ -1,5 +1,5 @@
 {
-  "name": "mpcoach",
+  "name": "cra-template-chropez",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -76,5 +76,9 @@
     "prettier": "^2.4.1",
     "react-app-rewired": "^2.1.8",
     "typescript": "^4.0.3"
-  }
+  },
+  "files": [
+    "template.json",
+    "template"
+  ]
 }
